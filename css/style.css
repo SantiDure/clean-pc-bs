@@ -145,14 +145,14 @@ body {
 .index__title,
 .experiencia__title,
 .card__title,
-.experiencia__title,
 .faq__title,
-.nosotros__title,
-.asesoramiento__title {
+.asesoramiento__title,
+.nosotros__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 1rem;
-  padding-bottom: 10px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 /* FAQ */
@@ -219,21 +219,16 @@ form {
   margin: 1rem 0 1rem 0;
 }
 /* Nosotros-grid */
+
 #nosotros__container {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "info foto";
+  grid-template-areas:
+    "info"
+    "foto";
   align-items: center;
   justify-items: center;
-}
-
-.nosotros__info {
-  grid-area: info;
-}
-
-.nosotros__placa-madre {
-  grid-area: foto;
 }
 
 /* Experiencia */
@@ -253,10 +248,6 @@ form {
 }
 
 /* Index */
-.index__title {
-  padding: 1rem;
-  font-size: 1.5rem;
-}
 
 .index__bienvenida {
   font-size: 1rem;
@@ -331,6 +322,7 @@ form {
 
 /* MEDIA QUERYS */
 @media (min-width: 768px) {
+  /* index */
   .index__map {
     width: 15rem;
     height: 20rem;
@@ -339,7 +331,7 @@ form {
   #index__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     row-gap: 0;
     min-height: 100vh;
     align-items: center;
@@ -349,6 +341,11 @@ form {
       "img horarios";
   }
 
+  .index__bienvenida {
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+  /* footer */
   .footer__logo {
     width: 4rem;
   }
@@ -366,11 +363,35 @@ form {
   #footer__container {
     flex-direction: row;
   }
+
+  /* Nosotros-grid */
+  #nosotros__container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "info foto";
+    align-items: center;
+    justify-items: center;
+  }
+
+  .nosotros__info {
+    grid-area: info;
+  }
+
+  .nosotros__placa-madre {
+    grid-area: foto;
+  }
 }
 
 @media (min-width: 1024px) {
+  /* index */
   .index__map {
     width: 20rem;
     height: 30rem;
+  }
+
+  .index__bienvenida {
+    padding-left: 6rem;
+    padding-right: 2rem;
   }
 }
