@@ -22,7 +22,7 @@ body {
 }
 
 #nav__container {
-  /* background-color: black; */
+  border-radius: 0px 0px 10px 10px;
 }
 
 .nav__logo {
@@ -89,6 +89,7 @@ body {
   color: white;
   background-color: rgb(20, 20, 20);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -98,6 +99,7 @@ body {
 .footer__sections,
 .footer__contact {
   flex-direction: column;
+  padding-left: 0;
 }
 
 .footer__logo {
@@ -107,8 +109,13 @@ body {
 .footer__nombre-logo {
   margin-right: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__nombre {
+  display: none;
 }
 
 /* Copyright */
@@ -340,6 +347,24 @@ form {
     grid-template-areas:
       "bienvenida map"
       "img horarios";
+  }
+
+  .footer__logo {
+    width: 4rem;
+  }
+
+  .footer__nombre-logo {
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__nombre {
+    display: block;
+  }
+  #footer__container {
+    flex-direction: row;
   }
 }
 
