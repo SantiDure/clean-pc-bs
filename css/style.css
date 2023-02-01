@@ -11,7 +11,7 @@
 /* Nav & Footer */
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0)),
     url(../img/background.jpg);
   min-height: 100vh;
   width: 100%;
@@ -31,10 +31,7 @@ body {
 }
 
 .nav__nombre-logo {
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-weight: bold;
 }
 
 .nav__section,
@@ -48,10 +45,18 @@ body {
   padding: 5px;
 }
 
-.nav__section--link,
-.footer__sections--link {
+.nav__section--link:hover {
+  background-size: 100% 2px;
+}
+
+.nav__section--link {
   text-decoration: none;
-  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(0deg, black, black);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: left bottom;
+  transition: background-size 400ms ease-in-out;
 }
 
 .nav__contact,
@@ -118,6 +123,11 @@ body {
   display: none;
 }
 
+.footer__sections--link {
+  text-decoration: none;
+  color: white;
+}
+
 /* Copyright */
 
 #copyright__container {
@@ -152,7 +162,6 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 1rem;
-  font-size: 1.5rem;
 }
 
 /* FAQ */
@@ -207,6 +216,11 @@ form {
 .nosotros__placa-madre {
   width: 15rem;
   border-radius: 10px;
+  transition: all 500ms ease;
+}
+
+.nosotros__placa-madre:hover {
+  transform: scale(1.1);
 }
 
 .nosotros__info {
@@ -262,11 +276,18 @@ form {
   width: 18rem;
   height: 15rem;
   border-radius: 20px;
+  transition: all 500ms ease;
 }
 
 .index__img {
   width: 20rem;
   border-radius: 25px;
+  transition: all 500ms ease;
+}
+
+.index__img:hover,
+.index__map:hover {
+  transform: scale(1.05);
 }
 
 .index__map__title {
