@@ -4,87 +4,223 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../img/PNG.png" type="image/x-icon" />
+    <meta name="description" content="Clean PC Web" />
+
+    <link rel="shortcut icon" href="./img/PNG.png" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/2fb09ecdc6.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Clean PC</title>
   </head>
-  
-    <!-- INICIA  NAV-BAR -->
-    <nav id="nav__container">
-      <div class="nav__nombre-logo">
-      <img class="nav__logo" src="../img/PNG.png" alt="logo"/>
-      <span class="nav__nombre">Clean PC</span>
-    </div>
-       
-        <ul class="nav__section">
-          <li class="nav__section__li"><a class="nav__section--link" href="../index.html">Inicio</a></li>
-            
-          </li>
-          <li class="nav__section__li">
-            <a class="nav__section--link" href="../pages/experiencia.html">Experiencia</a>
-          </li>
-          <li class="nav__section__li">
-            <a class="nav__section--link" href="../pages/faq.html"
-              >Preguntas Frecuentes</a 
-            >
-          </li>
-          <li class="nav__section__li">
-            <a class="nav__section--link" href="../pages/nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav__section__li">
-            <a class="nav__section--link" href="../pages/asesoramiento.html"
-              >Asesoramiento</a>
-          </li>
-        </ul>
-    
-        <ul class="nav__contact">
-          <a class="d" href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/"><li class="nav__contact__li"><i class="fa-brands fa-linkedin nav__contact--link"></i></li></a>
-         <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr"> <li class="nav__contact__li"><i class="fa-regular fa-envelope nav__contact--link"></i></li></a>
-         <a href="https://www.instagram.com/_santidure/"> <li class="nav__contact__li"><i class="fa-brands fa-instagram nav__contact--link"></i></li></a>
-        <a href="https://wa.me/+543471521764">  <li class="nav__contact__li"><i class="fa-brands fa-whatsapp nav__contact--link"></i></li></a>
-        </ul>
-      
-    </nav>
-  
+
   <body>
+    <!-- INICIA  NAV-BAR -->
+    <header>
+      <nav
+        id="nav__container"
+        class="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              class="nav__logo img-fluid"
+              src="../img/PNG.png"
+              alt="logo"
+            />Clean PC</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav__section navbar-nav">
+              <li class="nav-item nav__section__li">
+                <a
+                  class="nav__section--link nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item nav__section__li">
+                <a
+                  class="nav__section--link nav-link active"
+                  href="../pages/experiencia.html"
+                  >Experiencia</a
+                >
+              </li>
+              <li class="nav-item nav__section__li">
+                <a
+                  class="nav__section--link nav-link active"
+                  href="../pages/faq.html"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item nav__section__li">
+                <a
+                  class="nav__section--link nav-link active"
+                  href="../pages/nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item nav__section__li">
+                <a
+                  class="nav__section--link nav-link active"
+                  href="../pages/asesoramiento.html"
+                  >Asesoramiento</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="nav__contact navbar-nav">
+              <li class="nav-item nav__contact__li">
+                <a
+                  class="nav__contact--link nav-link active"
+                  href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="nav-item nav__contact__li">
+                <a
+                  class="nav__contact--link nav-link active"
+                  href="https://www.instagram.com/_santidure/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="nav-item nav__contact__li">
+                <a
+                  class="nav__contact--link nav-link active"
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </li>
+              <li class="nav-item nav__contact__li">
+                <a
+                  class="nav__contact--link nav-link active"
+                  href="https://wa.me/+543471521764"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main id="asesoramiento__container">
-        <h1 class="asesoramiento__title">Asesoramiento</h1>
-        <p>¿En que podemos ayudarte?¿como funciona nuestra plataforma?¿como consulto?
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quasi! Itaque quia doloribus voluptate nostrum sed, dolorem, veniam culpa voluptas eius ex in placeat adipisci quibusdam! Libero et quisquam nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure illum quaerat hic, provident voluptatibus assumenda quis cupiditate corporis omnis laudantium, tenetur incidunt dolor nostrum, quam asperiores voluptatum deleniti quo dicta?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, assumenda enim ratione in eos, culpa rerum corporis quae itaque nisi aliquid similique natus temporibus repellat placeat sunt non voluptatem quaerat.</p>
-        <img class="asesoramiento__img-1" src="../img/1656075751610.jpg" alt="img-asesoramiento">
-        <!-- GRABAR VIDEO GUÍA -->
-        <video src="" alt="pendiente-de-grabacion"></video>
+      <h1 class="asesoramiento__title">Asesoramiento</h1>
+      <p>
+        ¿En que podemos ayudarte?¿como funciona nuestra plataforma?¿como
+        consulto?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quasi!
+        Itaque quia doloribus voluptate nostrum sed, dolorem, veniam culpa
+        voluptas eius ex in placeat adipisci quibusdam! Libero et quisquam
+        nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+        illum quaerat hic, provident voluptatibus assumenda quis cupiditate
+        corporis omnis laudantium, tenetur incidunt dolor nostrum, quam
+        asperiores voluptatum deleniti quo dicta?Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Asperiores, assumenda enim ratione in eos,
+        culpa rerum corporis quae itaque nisi aliquid similique natus temporibus
+        repellat placeat sunt non voluptatem quaerat.
+      </p>
+      <img
+        class="asesoramiento__img-1"
+        src="../img/1656075751610.jpg"
+        alt="img-asesoramiento"
+      />
+      <!-- GRABAR VIDEO GUÍA -->
+      <video src="" alt="pendiente-de-grabacion"></video>
     </main>
     <footer id="footer__container">
-      
-        <ul class="footer__sections">
-          <li class="footer__sections__li"><a class="footer__sections--link" href="../index.html">Inicio</a></li>
-          <li class="footer__sections__li"><a class="footer__sections--link" href="../pages/experiencia.html">Experiencia</a></li>
-          <li class="footer__sections__li"><a class="footer__sections--link" href="../pages/faq.html">Preguntas Frecuentes</a></li>
-          <li class="footer__sections__li"><a class="footer__sections--link" href="../pages/nosotros.html">Nosotros</a></li>
-          <li class="footer__sections__li"><a class="footer__sections--link" href="../pages/asesoramiento.html">Asesoramiento</a></li>
-        </ul>
-        
-  
-        <ul class="footer__contact">
-          <li class="footer__contact__li"><a class="footer__contact--link" href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/">LinkedIn</a></li>
-          <li class="footer__contact__li"><a class="footer__contact--link" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr">E-mail</a></li>
-          <li class="footer__contact__li"> <a class="footer__contact--link" href="https://www.instagram.com/_santidure/">Instagram</a></li>
-          <li class="footer__contact__li"><a class="footer__contact--link" href="https://wa.me/+543471521764">Whatsapp</a></li>
-         </ul>
-        <div class="footer__nombre-logo">
-     <span class="footer__nombre">Clean PC</span>
-     <img class="footer__logo" src="../img/PNG.png" alt="logo" />
-    </div>
-  </footer>
-  <section id="copyright__container">
-  <p class="copyright__p">© Copyright | Santiago Duré</p>
+      <ul class="footer__sections">
+        <li class="footer__sections__li">
+          <a class="footer__sections--link" href="../index.html">Inicio</a>
+        </li>
+        <li class="footer__sections__li">
+          <a class="footer__sections--link" href="../pages/experiencia.html"
+            >Experiencia</a
+          >
+        </li>
+        <li class="footer__sections__li">
+          <a class="footer__sections--link" href="../pages/faq.html"
+            >Preguntas Frecuentes</a
+          >
+        </li>
+        <li class="footer__sections__li">
+          <a class="footer__sections--link" href="../pages/nosotros.html"
+            >Nosotros</a
+          >
+        </li>
+        <li class="footer__sections__li">
+          <a class="footer__sections--link" href="../pages/asesoramiento.html"
+            >Asesoramiento</a
+          >
+        </li>
+      </ul>
 
-</section>
-</body>
+      <ul class="footer__contact">
+        <li class="footer__contact__li">
+          <a
+            class="footer__contact--link"
+            href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="footer__contact__li">
+          <a
+            class="footer__contact--link"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr"
+            >E-mail</a
+          >
+        </li>
+        <li class="footer__contact__li">
+          <a
+            class="footer__contact--link"
+            href="https://www.instagram.com/_santidure/"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer__contact__li">
+          <a class="footer__contact--link" href="https://wa.me/+543471521764"
+            >Whatsapp</a
+          >
+        </li>
+      </ul>
+      <div class="footer__nombre-logo">
+        <span class="footer__nombre">Clean PC</span>
+        <img class="footer__logo" src="../img/PNG.png" alt="logo" />
+      </div>
+    </footer>
+    <section id="copyright__container">
+      <p class="copyright__p">© Copyright | Santiago Duré</p>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
