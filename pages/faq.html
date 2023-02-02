@@ -128,78 +128,95 @@
         </div>
       </nav>
     </header>
+    <h1 class="faq__title">Preguntas Frecuentes</h1>
     <main id="faq__container">
-      <h1 class="faq__title">Preguntas Frecuentes</h1>
       <section class="section__card">
-        <div class="card">
-          <h4 class="card__title">Titulo de la pregunta 1</h4>
-          <p class="card__content">
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta Contenido de la pregunta Contenido
-            de la pregunta Contenido de la pregunta Contenido de la pregunta
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta Contenido de la pregunta Contenido
-            de la pregunta Contenido de la pregunta Contenido de la pregunta
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta
-          </p>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h4 class="card__title">Titulo de la pregunta 2</h4>
-          <p class="card__content">
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta Contenido de la pregunta Contenido
-            de la pregunta Contenido de la pregunta Contenido de la pregunta
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta Contenido de la pregunta Contenido
-            de la pregunta Contenido de la pregunta Contenido de la pregunta
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta
-          </p>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h4 class="card__title">Titulo de la pregunta 3</h4>
-          <p class="card__content">
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta Contenido de la pregunta Contenido
-            de la pregunta Contenido de la pregunta Contenido de la pregunta
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta Contenido de la pregunta Contenido
-            de la pregunta Contenido de la pregunta Contenido de la pregunta
-            Contenido de la pregunta Contenido de la pregunta Contenido de la
-            pregunta Contenido de la pregunta
-          </p>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
         </div>
-
-        <article class="section__card__span">
-          <span
-            >Si tu pregunta no se encuentra en esta seccion, no dudes en hacer
-            tu consulta!</span
-          >
-        </article>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="section__form">
-        <form action="" class="faq__formulario">
-          <div class="consulta__div">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" />
+      <section class="section__card__span">
+        <span
+          >Si tu pregunta no se encuentra en esta seccion, no dudes en hacer tu
+          consulta!</span
+        >
+      </section>
+      <section class="card section__form">
+        <form>
+          <div class="mb-3">
+            <label for="nombreYApellido" class="form-label"
+              >Nombre y Apellido</label
+            >
+            <input type="text" class="form-control" id="nombreYApellido" />
           </div>
-          <div class="consulta__div">
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" />
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
           </div>
-          <div class="consulta__div">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
+          <div class="mb-3">
+            <label for="consulta" class="form-label">Consulta</label>
+            <input type="text" class="form-control" id="consulta" />
           </div>
-          <div class="consulta__div">
-            <label for="consulta">Consulta:</label>
-            <textarea name="consulta" id="consulta"></textarea>
-          </div>
-          <div class="consulta__div">
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpiar" />
-          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-primary">Limpiar</button>
         </form>
       </section>
     </main>

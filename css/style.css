@@ -165,10 +165,14 @@ body {
 }
 
 /* FAQ */
-
-.section__card {
-  display: flex;
-  flex-direction: column;
+#faq__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cards cards cards"
+    "form form span";
+  justify-items: center;
   align-items: center;
 }
 
@@ -178,7 +182,7 @@ body {
 
 .card {
   color: white;
-  background-color: rgb(123, 123, 123);
+  background-color: rgba(0, 0, 0, 0.553);
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   border-radius: 15px;
@@ -189,11 +193,21 @@ body {
   padding-bottom: 1rem;
 }
 
-.section__card__span {
-  text-align: center;
+.section__form {
+  grid-area: form;
+  width: -webkit-fill-available;
 }
-form {
-  justify-content: center;
+
+.section__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  grid-area: cards;
+}
+
+.section__card__span {
+  grid-area: span;
 }
 
 .faq__formulario {
