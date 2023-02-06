@@ -40,6 +40,10 @@ body {
   display: flex;
 }
 
+.nav__section {
+  font-size: smaller;
+}
+
 .nav__section__li,
 .footer__sections__li {
   padding: 5px;
@@ -96,8 +100,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   padding: 2%;
 }
 
@@ -113,6 +118,7 @@ body {
 
 .footer__nombre-logo {
   margin-right: 10px;
+  padding-left: inherit;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -165,13 +171,16 @@ body {
 }
 
 /* FAQ */
+/* FAQ Grid */
 #faq__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
     "cards cards cards"
-    "form form span";
+    "span span span"
+    "form form form";
+  row-gap: 0.5rem;
   justify-items: center;
   align-items: center;
 }
@@ -180,13 +189,12 @@ body {
   padding: 10px;
 }
 
-.card {
+.faq__card {
   color: white;
   background-color: rgba(0, 0, 0, 0.553);
-  margin-bottom: 1.5rem;
   padding: 1.5rem;
   border-radius: 15px;
-  max-width: 30rem;
+  margin: 1.5rem;
 }
 
 .card__title {
@@ -196,24 +204,22 @@ body {
 .section__form {
   grid-area: form;
   width: -webkit-fill-available;
+  width: 80%;
 }
 
 .section__card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 2rem;
-  column-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   grid-area: cards;
+  justify-content: center;
 }
 
 .section__card__span {
   grid-area: span;
+  grid-column: 2;
 }
 
 .faq__formulario {
-  background-color: aqua;
-  max-width: 30rem;
-  display: flex;
   flex-direction: column;
   margin: 10px;
   padding: 10px;
@@ -221,10 +227,6 @@ body {
   justify-items: center;
 }
 
-.section__form {
-  display: flex;
-  justify-content: center;
-}
 /* Nosotros */
 
 .nosotros__placa-madre {
@@ -381,6 +383,10 @@ body {
     padding-right: 2rem;
   }
   /* footer */
+  #footer__container {
+    align-items: center;
+  }
+
   .footer__logo {
     width: 4rem;
   }
@@ -416,9 +422,29 @@ body {
   .nosotros__placa-madre {
     grid-area: foto;
   }
+
+  /*  FAQ Grid */
+  #faq__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "cards cards"
+      "span span"
+      "form form";
+    row-gap: 0.5rem;
+    justify-items: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px) {
+  /* Nav */
+
+  .nav__section {
+    font-size: initial;
+  }
+
   /* index */
   .index__map {
     width: 20rem;
@@ -428,5 +454,19 @@ body {
   .index__bienvenida {
     padding-left: 6rem;
     padding-right: 2rem;
+  }
+
+  /* FAQ Grid */
+  #faq__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "cards cards cards"
+      "span span span"
+      "form form form";
+    row-gap: 0.5rem;
+    justify-items: center;
+    align-items: center;
   }
 }
