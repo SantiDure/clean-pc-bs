@@ -271,6 +271,7 @@ body {
     "descripcion "
     "descripcionImg";
   align-items: center;
+  justify-items: center;
 }
 
 .descripcion__p {
@@ -284,8 +285,24 @@ body {
 
 /* Asesoamiento */
 
+#asesoramiento__container {
+  display: grid;
+  grid-template-columns: 1rf;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "info"
+    "imgCmd";
+  align-items: center;
+  justify-items: center;
+}
+
 .asesoramiento__img-1 {
   width: 16rem;
+  grid-area: imgCmd;
+}
+
+.asesoramiento__info {
+  grid-area: info;
 }
 
 /* Index */
@@ -367,8 +384,13 @@ body {
   grid-area: horarios;
   justify-content: center;
 }
+@media (min-width: 360px) {
+  /* MEDIA QUERYS */
 
-/* MEDIA QUERYS */
+  .descripcion__img {
+    width: 22rem;
+  }
+}
 @media (min-width: 768px) {
   /* index */
   .index__map {
@@ -457,6 +479,13 @@ body {
   }
   .descripcion__img {
     width: 40rem;
+  }
+  /* asesoramiento */
+  #asesoramiento__container {
+    display: grid;
+    grid-template-columns: 2fr 1rf;
+    grid-template-rows: auto;
+    grid-template-areas: "info imgCmd";
   }
 }
 
