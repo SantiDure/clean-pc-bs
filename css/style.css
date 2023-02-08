@@ -264,11 +264,22 @@ body {
 /* Experiencia */
 
 .descripcion {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "descripcion "
+    "descripcionImg";
+  align-items: center;
+}
+
+.descripcion__p {
+  grid-area: descripcion;
 }
 
 .descripcion__img {
-  width: 45rem;
+  width: 19rem;
+  grid-area: descripcionImg;
 }
 
 /* Asesoamiento */
@@ -435,6 +446,17 @@ body {
     row-gap: 0.5rem;
     justify-items: center;
     align-items: center;
+  }
+  /* Experiencia */
+  .descripcion {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "descripcion descripcionImg";
+    align-items: center;
+  }
+  .descripcion__img {
+    width: 40rem;
   }
 }
 
