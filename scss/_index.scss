@@ -28,7 +28,7 @@
     transition: all 500ms ease;
     grid-area: img;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
 
     &:hover {
       transform: scale(1.05);
@@ -38,7 +38,7 @@
   .index__section__map {
     grid-area: map;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 3;
     .index__map__title {
       text-align: center;
       font-size: 1.2rem;
@@ -62,7 +62,7 @@
     grid-area: horarios;
     justify-content: center;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 4;
     .index__horarios__title {
       text-align: center;
       padding-bottom: 0.5rem;

@@ -321,7 +321,7 @@ body .nosotros__title {
   transition: all 500ms ease;
   grid-area: img;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
 }
 #index__container .index__img:hover {
   transform: scale(1.05);
@@ -329,7 +329,7 @@ body .nosotros__title {
 #index__container .index__section__map {
   grid-area: map;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 3;
 }
 #index__container .index__section__map .index__map__title {
   text-align: center;
@@ -352,7 +352,7 @@ body .nosotros__title {
   grid-area: horarios;
   justify-content: center;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 4;
 }
 #index__container .index__horarios .index__horarios__title {
   text-align: center;
