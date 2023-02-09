@@ -20,6 +20,12 @@
       grid-area: descripcionImg;
       grid-column: 1;
       grid-row: 2;
+      transition: all 500ms ease;
+      border-radius: 15px;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
   @media (min-width: 360px) {

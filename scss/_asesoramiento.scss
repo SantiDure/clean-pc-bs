@@ -19,6 +19,12 @@
     grid-area: imgCmd;
     grid-column: 1;
     grid-row: 2;
+    border-radius: 15px;
+    transition: all 500ms ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 @media (min-width: 768px) {
