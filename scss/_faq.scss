@@ -1,0 +1,49 @@
+/* FAQ */
+/* FAQ Grid */
+#faq__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cards cards cards"
+    "span span span"
+    "form form form";
+  row-gap: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  margin: 10px;
+
+  .section__card {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: cards;
+    justify-content: space-around;
+
+    .faq__card {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.553);
+      padding: 1.5rem;
+      border-radius: 15px;
+      margin: 1.5rem;
+      .card__title {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  .section__card__span {
+    grid-area: span;
+    grid-column: 2;
+  }
+  .section__form {
+    grid-area: form;
+    width: -webkit-fill-available;
+    width: 80%;
+    .faq__formulario {
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+/* Index */
+#index__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 20px;
+  min-height: 100vh;
+  margin: 10px;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "bienvenida"
+    "img"
+    "map"
+    "horarios";
+
+  .index__bienvenida {
+    font-size: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    grid-area: bienvenida;
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .index__img {
+    width: 20rem;
+    border-radius: 25px;
+    transition: all 500ms ease;
+    grid-area: img;
+    grid-column: 1;
+    grid-row: 1;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .index__section__map {
+    grid-area: map;
+    grid-column: 1;
+    grid-row: 1;
+    .index__map__title {
+      text-align: center;
+      font-size: 1.2rem;
+      padding-bottom: 0.8rem;
+    }
+    .index__container__iframe {
+      position: relative;
+      .index__map {
+        width: 18rem;
+        height: 15rem;
+        border-radius: 20px;
+        transition: all 500ms ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .index__horarios {
+    grid-area: horarios;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 1;
+    .index__horarios__title {
+      text-align: center;
+      padding-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .index__horarios__p {
+      font-size: 1rem;
+      padding: 0rem 1rem 0rem 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  /* index */
+
+  #index__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+      "bienvenida map"
+      "img horarios";
+    .index__bienvenida {
+      padding-left: 3rem;
+      padding-right: 2rem;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .index__img {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .index__section__map {
+      grid-column: 2;
+      grid-row: 1;
+      .index__map {
+        width: 15rem;
+        height: 20rem;
+      }
+    }
+    .index__horarios {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+}

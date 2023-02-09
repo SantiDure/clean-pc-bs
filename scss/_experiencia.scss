@@ -1,0 +1,51 @@
+#experiencia__container {
+  margin: 10px;
+
+  .descripcion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "descripcion "
+      "descripcionImg";
+    align-items: center;
+    justify-items: center;
+    .descripcion__p {
+      grid-area: descripcion;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .descripcion__img {
+      width: 20rem;
+      grid-area: descripcionImg;
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+  @media (min-width: 360px) {
+    .descripcion {
+      .descripcion__img {
+        width: 22rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .descripcion {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "descripcion descripcionImg";
+      align-items: center;
+      .descripcion__p {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .descripcion__img {
+        width: 40rem;
+        grid-column: 2;
+        grid-row: 1;
+      }
+    }
+  }
+}

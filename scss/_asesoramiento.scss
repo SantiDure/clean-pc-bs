@@ -1,0 +1,39 @@
+#asesoramiento__container {
+  display: grid;
+  grid-template-columns: 1rf;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "info"
+    "imgCmd";
+  align-items: center;
+  justify-items: center;
+  margin: 10px;
+
+  .asesoramiento__info {
+    grid-area: info;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .asesoramiento__img-1 {
+    width: 16rem;
+    grid-area: imgCmd;
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+@media (min-width: 768px) {
+  #asesoramiento__container {
+    display: grid;
+    grid-template-columns: 2fr 1rf;
+    grid-template-rows: auto;
+    grid-template-areas: "info imgCmd";
+    .asesoramiento__info {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .asesoramiento__img-1 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+/* Fuente */
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+}
+
+/* Titulos */
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    url(../img/background.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+
+  .index__title,
+  .experiencia__title,
+  .card__title,
+  .faq__title,
+  .asesoramiento__title,
+  .nosotros__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
