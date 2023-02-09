@@ -1,5 +1,7 @@
 /* FAQ */
 /* FAQ Grid */
+@import "./mixins";
+
 #faq__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -23,13 +25,8 @@
       color: white;
       background-color: rgba(0, 0, 0, 0.553);
       padding: 1.5rem;
-      border-radius: 15px;
       margin: 1.5rem;
-      transition: all 500ms ease;
-
-      &:hover {
-        transform: scale(1.05);
-      }
+      @include escallaConBorde();
       .card__title {
         padding-bottom: 1rem;
       }

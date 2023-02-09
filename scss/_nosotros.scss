@@ -1,3 +1,5 @@
+@import "./mixins";
+
 #nosotros__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -27,12 +29,7 @@
     grid-area: foto;
     grid-row: 2;
     grid-column: 1;
-    border-radius: 10px;
-    transition: all 500ms ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+    @include escallaConBorde();
   }
 }
 

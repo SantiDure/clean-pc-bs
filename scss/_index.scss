@@ -1,4 +1,5 @@
 /* Index */
+@import "./mixins";
 #index__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -24,15 +25,10 @@
 
   .index__img {
     width: 20rem;
-    border-radius: 25px;
-    transition: all 500ms ease;
     grid-area: img;
     grid-column: 1;
     grid-row: 2;
-
-    &:hover {
-      transform: scale(1.05);
-    }
+    @include escallaConBorde();
   }
 
   .index__section__map {

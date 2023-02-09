@@ -1,0 +1,8 @@
+@mixin escallaConBorde() {
+  border-radius: 15px;
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
