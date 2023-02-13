@@ -1,7 +1,7 @@
 {
   "name": "clean-pc-bs",
   "version": "1.0.0",
-  "description": "",
+  "description": "servicio técnico de pc",
   "main": "index.js",
   "scripts": {
     "compile": "sass --watch scss:css"
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SantiDure/clean-pc-bs/issues"
   },
-  "homepage": "https://github.com/SantiDure/clean-pc-bs#readme"
+  "homepage": "https://github.com/SantiDure/clean-pc-bs#readme",
+  "dependencies": {
+    "sass": "^1.58.0"
+  }
 }
