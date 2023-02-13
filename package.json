@@ -10,8 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/SantiDure/clean-pc-bs.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "raparacion",
+    "pc",
+    "clean",
+    "mantenimiento"
+  ],
+  "author": "Santiago Duré",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SantiDure/clean-pc-bs/issues"
