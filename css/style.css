@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10771,6 +10772,7 @@ textarea.form-control-lg {
   }
 }
 /* Fuente */
+/* Variables */
 /* reseteo */
 * {
   margin: 0;
@@ -10799,6 +10801,7 @@ body .nosotros__title {
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 1rem;
+  color: white;
 }
 
 #nav__container {
@@ -10852,7 +10855,7 @@ body .nosotros__title {
 #nav__container .nav__contact .nav__contact__li .nav__contact--link {
   font-size: 1.5rem;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 #footer__container {
@@ -10950,7 +10953,7 @@ body .nosotros__title {
   }
 }
 .navbar {
-  --bs-navbar-brand-color: white;
+  --bs-navbar-brand-color: $textColor;
 }
 
 #asesoramiento__container {
@@ -10961,6 +10964,7 @@ body .nosotros__title {
   align-items: center;
   justify-items: center;
   margin: 10px;
+  color: white;
 }
 #asesoramiento__container .asesoramiento__info {
   grid-area: info;
@@ -10997,6 +11001,7 @@ body .nosotros__title {
 }
 #experiencia__container {
   margin: 10px;
+  color: white;
 }
 #experiencia__container .descripcion {
   display: grid;
@@ -11081,11 +11086,13 @@ body .nosotros__title {
 #faq__container .section__card__span {
   grid-area: span;
   grid-column: 2;
+  color: white;
 }
 #faq__container .section__form {
   grid-area: form;
   width: -webkit-fill-available;
   width: 80%;
+  color: white;
 }
 #faq__container .section__form .faq__formulario {
   flex-direction: column;
@@ -11095,7 +11102,39 @@ body .nosotros__title {
   justify-items: center;
 }
 
-/* Index */
+/* Index */ /* Fuente */
+/* Variables */
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+}
+
+/* Titulos */
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/background.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+body .index__title,
+body .experiencia__title,
+body .card__title,
+body .faq__title,
+body .asesoramiento__title,
+body .nosotros__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+
 #index__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -11113,6 +11152,7 @@ body .nosotros__title {
   grid-area: bienvenida;
   grid-row: 1;
   grid-column: 1;
+  color: white;
 }
 #index__container .index__img {
   width: 20rem;
@@ -11134,6 +11174,7 @@ body .nosotros__title {
   text-align: center;
   font-size: 1.2rem;
   padding-bottom: 0.8rem;
+  color: white;
 }
 #index__container .index__section__map .index__container__iframe {
   position: relative;
@@ -11152,6 +11193,7 @@ body .nosotros__title {
   justify-content: center;
   grid-column: 1;
   grid-row: 4;
+  color: white;
 }
 #index__container .index__horarios .index__horarios__title {
   text-align: center;
@@ -11206,6 +11248,7 @@ body .nosotros__title {
   align-items: center;
   justify-items: center;
   margin: 10px;
+  color: white;
 }
 #nosotros__container .nosotros__info {
   display: flex;

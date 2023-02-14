@@ -1,5 +1,9 @@
 /* Fuente */
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+
+/* Variables */
+$textColor: white;
+
 /* reseteo */
 * {
   margin: 0;
@@ -29,5 +33,6 @@ body {
     text-transform: uppercase;
     font-size: 1.5rem;
     padding: 1rem;
+    color: $textColor;
   }
 }

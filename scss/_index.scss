@@ -1,5 +1,7 @@
 /* Index */
 @import "./mixins";
+@import "./generales";
+
 #index__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -21,6 +23,7 @@
     grid-area: bienvenida;
     grid-row: 1;
     grid-column: 1;
+    color: $textColor;
   }
 
   .index__img {
@@ -39,6 +42,7 @@
       text-align: center;
       font-size: 1.2rem;
       padding-bottom: 0.8rem;
+      color: $textColor;
     }
     .index__container__iframe {
       position: relative;
@@ -59,6 +63,7 @@
     justify-content: center;
     grid-column: 1;
     grid-row: 4;
+    color: $textColor;
     .index__horarios__title {
       text-align: center;
       padding-bottom: 0.5rem;

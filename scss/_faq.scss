@@ -22,7 +22,7 @@
     justify-content: space-around;
 
     .faq__card {
-      color: white;
+      color: $textColor;
       background-color: rgba(0, 0, 0, 0.553);
       padding: 1.5rem;
       margin: 1.5rem;
@@ -35,11 +35,13 @@
   .section__card__span {
     grid-area: span;
     grid-column: 2;
+    color: $textColor;
   }
   .section__form {
     grid-area: form;
     width: -webkit-fill-available;
     width: 80%;
+    color: $textColor;
     .faq__formulario {
       flex-direction: column;
       margin: 10px;
