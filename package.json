@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/SantiDure/clean-pc-bs#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "sass": "^1.58.0"
   }
 }
