@@ -27,8 +27,10 @@
       padding: 1.5rem;
       margin: 1.5rem;
       @include escallaConBorde();
-      .card__title {
-        padding-bottom: 1rem;
+      .card__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
       }
     }
   }
