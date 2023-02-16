@@ -1,7 +1,7 @@
 {
   "name": "clean-pc-bs",
   "version": "1.0.0",
-  "description": "servicio técnico de pc",
+  "description": "Mantenimiento, ensamble y reparación de tu PC",
   "main": "index.js",
   "scripts": {
     "compile": "sass --watch scss:css"
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/SantiDure/clean-pc-bs.git"
   },
   "keywords": [
-    "raparacion",
-    "pc",
-    "clean",
-    "mantenimiento"
+    "reparacion de pc",
+    "rosario",
+    "armado y reparacion de pc",
+    "tecnico"
   ],
   "author": "Santiago Duré",
   "license": "ISC",
