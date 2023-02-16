@@ -11093,6 +11093,7 @@ body .nosotros__title {
   background-color: rgba(0, 0, 0, 0.553);
   padding: 1.5rem;
   margin: 1.5rem;
+  width: 30%;
   border-radius: 15px;
   transition: all 500ms ease;
 }
