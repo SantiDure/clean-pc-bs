@@ -1,0 +1,76 @@
+/* Fuente */
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+/* Variables */
+/* reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+}
+
+/* Titulos */
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/background.webp);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+body .index__title,
+body .experiencia__title,
+body .card__title,
+body .faq__title,
+body .asesoramiento__title,
+body .nosotros__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+#thanks__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#thanks__container .card__link {
+  text-decoration: none;
+}
+#thanks__container .card__link .thanks__card {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.553);
+  padding: 1.5rem;
+  margin: 1.5rem;
+  width: 18rem;
+  background-color: rgba(25, 163, 60, 0.497);
+  text-align: center;
+  border-radius: 15px;
+  transition: all 500ms ease;
+}
+#thanks__container .card__link .thanks__card:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  #thanks__container .card__link .thanks__card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.553);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    width: 60rem;
+    background-color: rgba(25, 163, 60, 0.497);
+    text-align: center;
+    border-radius: 15px;
+    transition: all 500ms ease;
+  }
+  #thanks__container .card__link .thanks__card:hover {
+    transform: scale(1.05);
+  }
+}
+
+/*# sourceMappingURL=thanks.css.map */

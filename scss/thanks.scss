@@ -1,0 +1,33 @@
+@import "./mixins";
+@import "./generales";
+
+#thanks__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  .card__link {
+    text-decoration: none;
+    .thanks__card {
+      @include styleCard();
+      width: 18rem;
+      background-color: rgba(25, 163, 60, 0.497);
+      text-align: center;
+      @include escallaConBorde();
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #thanks__container {
+    .card__link {
+      .thanks__card {
+        @include styleCard();
+        width: 60rem;
+        background-color: rgba(25, 163, 60, 0.497);
+        text-align: center;
+        @include escallaConBorde();
+      }
+    }
+  }
+}

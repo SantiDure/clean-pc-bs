@@ -22,10 +22,7 @@
     justify-content: space-around;
 
     .faq__card {
-      color: $textColor;
-      background-color: rgba(0, 0, 0, 0.553);
-      padding: 1.5rem;
-      margin: 1.5rem;
+      @include styleCard();
       @include escallaConBorde();
       .card__body {
         display: flex;
