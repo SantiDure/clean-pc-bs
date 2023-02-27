@@ -214,12 +214,21 @@
       </section>
       <!-- FORMULARIO DE CONSULTA -->
       <section class="section__form">
-        <form class="faq__formulario">
+        <form
+          class="faq__formulario"
+          action="https://formsubmit.co/santidure2002@gmail.com"
+          method="POST"
+        >
           <div class="mb-3">
             <label for="nombreYApellido" class="form-label"
               >Nombre y Apellido</label
             >
-            <input type="text" class="form-control" id="nombreYApellido" />
+            <input
+              type="text"
+              class="form-control"
+              id="nombreYApellido"
+              name="nombreYApellido"
+            />
           </div>
 
           <div class="mb-3">
@@ -229,17 +238,29 @@
               class="form-control"
               id="email"
               aria-describedby="emailHelp"
+              name="email"
             />
           </div>
           <div class="mb-3">
             <label for="consulta" class="form-label">Consulta</label>
-            <input type="text" class="form-control" id="consulta" />
+            <input
+              type="text"
+              class="form-control"
+              id="consulta"
+              name="consulta"
+            />
           </div>
 
           <button type="submit" class="btn btn-primary">Enviar</button>
           <button type="reset" class="btn btn-danger">
             <i class="fa-sharp fa-solid fa-arrow-rotate-left"></i>
           </button>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://cleanpc.netlify.app/"
+          />
+          <input type="hidden" name="_captcha" value="false" />
         </form>
       </section>
     </main>
