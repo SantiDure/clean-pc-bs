@@ -4,215 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Mantenimiento, ensamble y reparación de tu PC"
-    />
+    <meta name="description" content="Mantenimiento, ensamble y reparación de tu PC" />
     <meta name="author" content="Santiago Duré" />
-    <meta
-      name="keywords"
-      content="reparacion de pc, rosario, armado y reparacion de pc, tecnico"
-    />
     <link rel="shortcut icon" href="../img/PNG.webp" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/2fb09ecdc6.js"
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="https://kit.fontawesome.com/2fb09ecdc6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Clean PC - Experiencia</title>
+    <title>Clean PC — Experiencia</title>
   </head>
-
   <body>
-    <!-- INICIA  NAV-BAR -->
     <header>
-      <nav
-        id="nav__container"
-        class="navbar navbar-expand-lg navbar-expand-md bg-body-tertiary"
-      >
+      <nav id="nav__container" class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand nav__nombre-logo" href="../index.html"
-            ><img
-              class="nav__logo img-fluid"
-              src="../img/PNG.webp"
-              alt="logo-clean-pc"
-            />Clean PC</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand nav__nombre-logo" href="../index.html">
+            <img class="nav__logo img-fluid" src="../img/PNG.webp" alt="logo-clean-pc" />Clean PC
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon nav__button"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <!--NAV SECTIONS -->
-            <ul class="nav__section navbar-nav">
-              <li class="nav-item nav__section__li">
-                <a
-                  class="nav__section--link nav-link active"
-                  aria-current="page"
-                  href="../index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item nav__section__li">
-                <a
-                  class="nav__section--link nav-link active"
-                  href="../pages/experiencia.html"
-                  >Experiencia</a
-                >
-              </li>
-              <li class="nav-item nav__section__li">
-                <a
-                  class="nav__section--link nav-link active"
-                  href="../pages/faq.html"
-                  >FAQ</a
-                >
-              </li>
-              <li class="nav-item nav__section__li">
-                <a
-                  class="nav__section--link nav-link active"
-                  href="../pages/nosotros.html"
-                  >Sobre mí</a
-                >
-              </li>
-              <li class="nav-item nav__section__li">
-                <a
-                  class="nav__section--link nav-link active"
-                  href="../pages/asesoramiento.html"
-                  >Asesoramiento</a
-                >
-              </li>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="nav__section navbar-nav me-3">
+              <li class="nav-item nav__section__li"><a class="nav__section--link nav-link" href="../index.html">Inicio</a></li>
+              <li class="nav-item nav__section__li"><a class="nav__section--link nav-link" href="../pages/experiencia.html">Experiencia</a></li>
+              <li class="nav-item nav__section__li"><a class="nav__section--link nav-link" href="../pages/faq.html">FAQ</a></li>
+           
             </ul>
-          </div>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <!-- NAV CONTACT -->
             <ul class="nav__contact navbar-nav">
-              <li class="nav-item nav__contact__li">
-                <a
-                  class="nav__contact--link nav-link active"
-                  href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-              <li class="nav-item nav__contact__li">
-                <a
-                  class="nav__contact--link nav-link active"
-                  href="https://www.instagram.com/_santidure/"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-              <li class="nav-item nav__contact__li">
-                <a
-                  class="nav__contact--link nav-link active"
-                  href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr"
-                  ><i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-              <li class="nav-item nav__contact__li">
-                <a
-                  class="nav__contact--link nav-link active"
-                  href="https://wa.me/+543471521764"
-                  ><i class="fa-brands fa-whatsapp"></i
-                ></a>
-              </li>
+              <li class="nav-item nav__contact__li"><a class="nav__contact--link nav-link" href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li class="nav-item nav__contact__li"><a class="nav__contact--link nav-link" href="https://www.instagram.com/_santidure/"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="nav-item nav__contact__li"><a class="nav__contact--link nav-link" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr"><i class="fa-solid fa-envelope"></i></a></li>
+              <li class="nav-item nav__contact__li"><a class="nav__contact--link nav-link" href="https://wa.me/+543471521764"><i class="fa-brands fa-whatsapp"></i></a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <h1 class="experiencia__title">Mi trabajo</h1>
+    <h1 class="page-title">Mi trabajo</h1>
+
     <main id="experiencia__container">
       <section class="descripcion">
         <section class="descripcion__section">
           <p class="descripcion__p">
-            Llevo trabajando desde hace más de 2 años, comencé dado a un gusto
-            personal por conocer el funcionamiento interno de las cosas,
-            puntualmente los equipos de cómputo, así fui formándome de forma
-            autodidacta, creciendo y ganando experiencia en el mundo del
-            mantenimiento, la reparación y el ensamble de PC.
+           Hace más de 7 años convertí mi curiosidad por saber cómo funcionan las cosas por dentro en mi profesión. Me especializo en el mantenimiento, reparación y ensamble de computadoras (desktop y notebooks), soporte técnico para smartphones y reparación de otros dispositivos electrónicos. Además, cuento con un servicio de impresión 3D incorporado recientemente.
           </p>
           <p class="descripcion__p">
-            Realizo trabajos de instalación de software y hardware, limpieza y
-            mantenimiento de tu pc, ya sea que se trate de desktop, notebook u
-            otro formato disponible.
+            ¡Contanos qué necesitás y lo resolvemos!
           </p>
         </section>
-        <!--IMG-->
-        <img
-          class="descripcion__img"
-          src="../img/Antes-despues.webp"
-          alt="exp-antes-y-despues.png"
-        />
+
+        <!-- CARRUSEL -->
+        <div id="trabajosCarousel" class="carousel slide descripcion__carousel" data-bs-ride="carousel" data-bs-interval="3500">
+          <!-- indicadores -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="3" aria-label="Imagen 4"></button>
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="4" aria-label="Imagen 5"></button>
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="5" aria-label="Imagen 6"></button>
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="6" aria-label="Imagen 7"></button>
+            <button type="button" data-bs-target="#trabajosCarousel" data-bs-slide-to="7" aria-label="Imagen 8"></button>
+          </div>
+
+          <!-- slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/1.webp" class="d-block w-100" alt="Trabajo 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/2.webp" class="d-block w-100" alt="Trabajo 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/3.jpg" class="d-block w-100" alt="Trabajo 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/4.jpg" class="d-block w-100" alt="Trabajo 4" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/5.webp" class="d-block w-100" alt="Trabajo 5" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/6.webp" class="d-block w-100" alt="Trabajo 6" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/7.webp" class="d-block w-100" alt="Trabajo 7" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/8.jpg" class="d-block w-100" alt="Trabajo 8" />
+            </div>
+          </div>
+
+          <!-- controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#trabajosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#trabajosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
       </section>
     </main>
-    <!-- INICIA FOOTER -->
+
     <footer id="footer__container">
       <ul class="footer__sections">
-        <li class="footer__sections__li">
-          <a class="footer__sections--link" href="../index.html">Inicio</a>
-        </li>
-        <li class="footer__sections__li">
-          <a class="footer__sections--link" href="../pages/experiencia.html"
-            >Experiencia</a
-          >
-        </li>
-        <li class="footer__sections__li">
-          <a class="footer__sections--link" href="../pages/faq.html"
-            >Preguntas Frecuentes</a
-          >
-        </li>
-        <li class="footer__sections__li">
-          <a class="footer__sections--link" href="../pages/nosotros.html"
-            >Sobre mí</a
-          >
-        </li>
-        <li class="footer__sections__li">
-          <a class="footer__sections--link" href="../pages/asesoramiento.html"
-            >Asesoramiento</a
-          >
-        </li>
+        <li class="footer__sections__li"><a class="footer__sections--link" href="../index.html">Inicio</a></li>
+        <li class="footer__sections__li"><a class="footer__sections--link" href="../pages/experiencia.html">Experiencia</a></li>
+        <li class="footer__sections__li"><a class="footer__sections--link" href="../pages/faq.html">FAQ</a></li>
+        
       </ul>
-
       <ul class="footer__contact">
-        <li class="footer__contact__li">
-          <a
-            class="footer__contact--link"
-            href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/"
-            >LinkedIn</a
-          >
-        </li>
-        <li class="footer__contact__li">
-          <a
-            class="footer__contact--link"
-            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr"
-            >E-mail</a
-          >
-        </li>
-        <li class="footer__contact__li">
-          <a
-            class="footer__contact--link"
-            href="https://www.instagram.com/_santidure/"
-            >Instagram</a
-          >
-        </li>
-        <li class="footer__contact__li">
-          <a class="footer__contact--link" href="https://wa.me/+543471521764"
-            >Whatsapp</a
-          >
-        </li>
+        <li class="footer__contact__li"><a class="footer__contact--link" href="https://www.linkedin.com/in/santiago-dur%C3%A9-9699571ba/">LinkedIn</a></li>
+        <li class="footer__contact__li"><a class="footer__contact--link" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBnpsKJKhdkhdSLbpXgVDDLXlsCjFTMJlRMrQBbDwqbszSNTTglzPbGGQNrFKMSNNnmKfDr">E-mail</a></li>
+        <li class="footer__contact__li"><a class="footer__contact--link" href="https://www.instagram.com/_santidure/">Instagram</a></li>
+        <li class="footer__contact__li"><a class="footer__contact--link" href="https://wa.me/+543471521764">Whatsapp</a></li>
       </ul>
       <div class="footer__nombre-logo">
         <span class="footer__nombre">Clean PC</span>
@@ -220,12 +130,10 @@
       </div>
     </footer>
     <section id="copyright__container">
-      <p class="copyright__p">© Copyright | Santiago Duré</p>
+      <p class="copyright__p">© Copyright — Santiago Duré</p>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,167 +1,175 @@
+/* ─── NAVBAR ──────────────────────────────────────────────── */
 #nav__container {
-  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(10, 11, 14, 0.85) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
-  .nav__button {
-    filter: invert(100%) sepia(9%) saturate(3947%) hue-rotate(275deg)
-      brightness(109%) contrast(94%);
-  }
   .nav__nombre-logo {
-    font-weight: bold;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    color: var(--text) !important;
     text-decoration: none;
-    color: $textColor;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
     .nav__logo {
-      width: 5rem;
-      margin: 10px;
-    }
-    .menu__icon {
-      color: $textColor;
+      width: 2.2rem;
+      border-radius: 6px;
     }
   }
 
+  /* hamburger icon */
+  .navbar-toggler {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.3rem 0.6rem;
+    &:focus { box-shadow: 0 0 0 2px var(--accent-glow); }
+    .nav__button {
+      filter: invert(1);
+    }
+  }
+
+  /* nav sections */
   .nav__section {
-    list-style-type: none;
-    display: flex;
-    font-size: smaller;
+    gap: 0.2rem;
 
     .nav__section__li {
-      padding: 5px;
       .nav__section--link {
+        font-family: var(--font-body);
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--text-dim) !important;
         text-decoration: none;
-        font-weight: bold;
-        background-image: linear-gradient(0deg, $textColor, $textColor);
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        background-position: left bottom;
-        transition: background-size 400ms ease-in-out;
-        color: $textColor;
+        padding: 0.4rem 0.7rem !important;
+        border-radius: var(--radius-sm);
+        transition: var(--transition);
+        background: none !important;
 
-        &:hover {
-          background-size: 100% 2px;
+        &:hover, &.active-page {
+          color: var(--text) !important;
+          background: var(--accent-dim) !important;
         }
       }
     }
   }
+
+  /* contact icons */
   .nav__contact {
-    list-style-type: none;
-    display: flex;
-    flex-direction: inherit;
-    justify-content: space-around;
+    gap: 0.1rem;
 
     .nav__contact__li {
-      padding: 5px;
       .nav__contact--link {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+        color: var(--text-muted) !important;
         text-decoration: none;
-        color: $textColor;
+        padding: 0.4rem 0.5rem !important;
+        border-radius: var(--radius-sm);
+        transition: var(--transition);
+
+        &:hover {
+          color: var(--accent) !important;
+          background: var(--accent-dim) !important;
+        }
       }
     }
   }
 }
+
+/* ─── FOOTER ──────────────────────────────────────────────── */
 #footer__container {
-  color: $textColor;
-  background-color: rgb(20, 20, 20);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
-  flex-wrap: wrap;
-  align-items: baseline;
-  padding: 2%;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 2rem;
+  align-items: start;
 
   .footer__sections {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    gap: 0.5rem;
 
-    .footer__sections__li {
-      padding: 5px;
-      .footer__sections--link {
-        text-decoration: none;
-        color: $textColor;
-      }
+    .footer__sections--link {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: var(--transition);
+
+      &:hover { color: var(--accent); }
     }
   }
+
   .footer__contact {
-    list-style-type: none;
     display: flex;
-    flex-direction: inherit;
-    justify-content: space-around;
     flex-direction: column;
-    padding-left: 0;
+    gap: 0.5rem;
 
-    .footer__contact__li {
-      padding: 5px;
-      .footer__contact--link {
-        text-decoration: none;
-        color: $textColor;
-      }
+    .footer__contact--link {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: var(--transition);
+
+      &:hover { color: var(--accent); }
     }
   }
+
   .footer__nombre-logo {
-    margin-right: 10px;
-    padding-left: inherit;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 0.4rem;
 
     .footer__nombre {
-      display: none;
-      font-size: 1.2rem;
-      padding-right: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
     }
 
     .footer__logo {
-      width: 4rem;
+      width: 2.5rem;
+      border-radius: 6px;
+      opacity: 0.7;
     }
   }
 }
 
-/* Copyright */
-
+/* ─── COPYRIGHT ───────────────────────────────────────────── */
 #copyright__container {
-  background-color: rgb(23, 23, 23);
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+
   .copyright__p {
     text-align: center;
-    font-size: 0.8rem;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 0;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    padding: 0.6rem;
+    font-family: var(--font-mono);
+    letter-spacing: 0.05em;
   }
 }
 
-@media (min-width: 768px) {
-  /* footer */
+/* ─── FOOTER RESPONSIVE ───────────────────────────────────── */
+@media (max-width: 640px) {
   #footer__container {
-    align-items: center;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 
     .footer__nombre-logo {
-      margin-right: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: $textColor;
-
-      .footer__logo {
-        width: 4rem;
-      }
-      .footer__nombre {
-        display: block;
-      }
+      grid-column: 1 / -1;
+      flex-direction: row;
+      justify-content: center;
     }
   }
-}
-
-@media (min-width: 1024px) {
-  /* Nav */
-
-  .nav__section {
-    font-size: initial;
-  }
-}
-
-.navbar {
-  --#{$prefix}navbar-brand-color: $textColor;
 }

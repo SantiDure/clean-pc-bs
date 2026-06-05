@@ -1,52 +1,149 @@
-/* FAQ */
-/* FAQ Grid */
-@import "./mixins";
-
+/* ─── FAQ ─────────────────────────────────────────────────── */
 #faq__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas:
-    "cards cards cards"
-    "span span span"
-    "form form form";
-  row-gap: 0.5rem;
-  justify-items: center;
-  align-items: center;
-  margin: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 
+  /* ── cards grid ── */
   .section__card {
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: cards;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
 
     .faq__card {
-      @include styleCard();
-      @include escallaConBorde();
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      transition: var(--transition);
+      cursor: default;
+
+      /* override Bootstrap inline styles */
+      width: auto !important;
+      height: auto !important;
+
+      &:hover {
+        border-color: rgba(0, 212, 255, 0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 32px rgba(0, 212, 255, 0.08);
+      }
+
+      .card-title {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        letter-spacing: 0.03em;
+        color: var(--accent);
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+      }
+
+      .card-text {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.65;
+      }
+
       .card__body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        background: none;
+        border: none;
+        padding: 0;
       }
     }
   }
+
+  /* ── span prompt ── */
   .section__card__span {
-    grid-area: span;
-    grid-column: 2;
-    color: $textColor;
+    text-align: center;
+
+    span {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
   }
+
+  /* ── formulario ── */
   .section__form {
-    grid-area: form;
-    width: -webkit-fill-available;
-    width: 80%;
-    color: $textColor;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+
     .faq__formulario {
+      display: flex;
       flex-direction: column;
-      margin: 10px;
-      padding: 10px;
-      align-items: center;
-      justify-items: center;
+      gap: 1.2rem;
+
+      .form-label {
+        font-size: 0.8rem;
+        font-family: var(--font-mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 0.4rem;
+      }
+
+      .form-control {
+        background: var(--bg-surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        color: var(--text);
+        padding: 0.65rem 0.9rem;
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        transition: var(--transition);
+
+        &:focus {
+          background: var(--bg-surface);
+          border-color: var(--accent);
+          box-shadow: 0 0 0 3px var(--accent-dim);
+          color: var(--text);
+          outline: none;
+        }
+
+        &::placeholder { color: var(--text-muted); opacity: 0.6; }
+      }
+
+      .mb-3 { margin-bottom: 0 !important; }
+
+      /* buttons row */
+      .btn-primary {
+        background: var(--accent);
+        border: none;
+        color: #000;
+        font-weight: 600;
+        font-size: 0.88rem;
+        letter-spacing: 0.05em;
+        padding: 0.65rem 1.6rem;
+        border-radius: var(--radius-sm);
+        transition: var(--transition);
+
+        &:hover {
+          background: #33ddff;
+          box-shadow: 0 0 16px var(--accent-glow);
+        }
+      }
+
+      .btn-danger {
+        background: transparent;
+        border: 1px solid rgba(255, 80, 80, 0.3);
+        color: rgba(255, 100, 100, 0.7);
+        border-radius: var(--radius-sm);
+        padding: 0.65rem 0.9rem;
+        transition: var(--transition);
+
+        &:hover {
+          background: rgba(255, 80, 80, 0.08);
+          border-color: rgba(255, 80, 80, 0.5);
+          color: #ff6464;
+        }
+      }
     }
   }
 }

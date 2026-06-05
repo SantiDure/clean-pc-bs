@@ -1,120 +1,114 @@
-/* Index */
-@import "./mixins";
-@import "./generales";
-
+/* ─── INDEX ───────────────────────────────────────────────── */
 #index__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  row-gap: 20px;
-  min-height: 100vh;
-  margin: 10px;
-  align-items: center;
-  justify-items: center;
-  grid-template-areas:
-    "bienvenida"
-    "img"
-    "map"
-    "horarios";
+  gap: 2.5rem;
 
+  /* ── bienvenida ── */
   .index__bienvenida {
-    font-size: 1.8rem;
-    padding: 0rem 1rem 0rem 1rem;
-    grid-area: bienvenida;
-    grid-row: 1;
-    grid-column: 1;
-    color: $textColor;
-  }
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1.4;
 
-  .index__img {
-    width: 20rem;
-    grid-area: img;
-    grid-column: 1;
-    grid-row: 2;
-    @include escallaConBorde();
-  }
-
-  .index__section__map {
-    grid-area: map;
-    grid-column: 1;
-    grid-row: 3;
-    .index__map__title {
-      text-align: center;
-      font-size: 1.6rem;
-      padding-bottom: 0.8rem;
-      color: $textColor;
+    strong {
+      font-weight: 600;
+      color: var(--accent);
     }
-    .index__container__iframe {
-      position: relative;
-      .index__map {
-        width: 18rem;
-        height: 15rem;
-        border-radius: 20px;
-        transition: all 500ms ease;
+  }
 
-        &:hover {
-          transform: scale(1.05);
-        }
+  /* ── hero image ── */
+  .index__img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    justify-self: center;
+
+    &:hover {
+      transform: scale(1.02);
+      border-color: var(--accent-glow);
+      box-shadow: 0 0 32px var(--accent-glow);
+    }
+  }
+
+  /* ── mapa ── */
+  .index__section__map {
+    .index__map__title {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+
+      &::before { content: '📍 '; }
+    }
+
+    .index__map {
+      width: 100%;
+      max-width: 500px;
+      height: 260px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      display: block;
+
+      &:hover {
+        border-color: var(--accent-glow);
+        box-shadow: 0 0 24px var(--accent-glow);
       }
     }
   }
+
+  /* ── horarios ── */
   .index__horarios {
-    grid-area: horarios;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1;
-    grid-row: 4;
-    color: $textColor;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 1.5rem 2rem;
 
     .index__horarios__title {
-      text-align: center;
-      padding-bottom: 0.5rem;
-      font-size: 1.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
     }
+
     .index__horarios__p {
-      font-size: 1rem;
-      padding: 0rem 1rem 0rem 1rem;
+      font-size: 0.95rem;
+      color: var(--text-dim);
+      padding: 0.2rem 0;
+
+      &:last-child {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        margin-top: 0.6rem;
+        padding-top: 0.6rem;
+        border-top: 1px solid var(--border);
+      }
     }
   }
 }
 
+/* ─── INDEX RESPONSIVE ────────────────────────────────────── */
 @media (min-width: 768px) {
-  /* index */
-
   #index__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    row-gap: 0;
-    min-height: 100vh;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "bienvenida map"
-      "img horarios";
-    .index__bienvenida {
-      padding-left: 3rem;
-      padding-right: 2rem;
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .index__img {
-      grid-column: 1;
-      grid-row: 2;
-    }
-    .index__section__map {
-      grid-column: 2;
-      grid-row: 1;
-      .index__map {
-        width: 15rem;
-        height: 20rem;
-      }
-    }
-    .index__horarios {
-      grid-column: 2;
-      grid-row: 2;
-    }
+      "bienvenida  map"
+      "img         horarios";
+    align-items: center;
+
+    .index__bienvenida    { grid-area: bienvenida; }
+    .index__img           { grid-area: img; max-width: 100%; }
+    .index__section__map  { grid-area: map; }
+    .index__horarios      { grid-area: horarios; }
   }
 }
